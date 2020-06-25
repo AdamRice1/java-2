@@ -19,8 +19,8 @@ public class DeluxeBurger extends Burger {
     public String burgerTopping6;
     public double burgerTopping6Price;
 
-    public DeluxeBurger(){
-        super("Deluxe", "Bacon & Beef", 20.00, "Pretzel");
+    public DeluxeBurger(Meat meat, Bread bread){
+        super("Deluxe", meat ,20.00, bread);
     }
     public void addBurgerTopping1(String name, double price){
             this.burgerTopping1 = name;

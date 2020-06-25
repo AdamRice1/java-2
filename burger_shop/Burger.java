@@ -2,15 +2,15 @@ package burger_shop;
 
 public class Burger {
     public String name;
-    public String meat;
+    public Meat meat;
     public double price;
-    public String bread;
+    public Bread bread;
     public String topping1;
     public double topping1Price;
     public String topping2;
     public double topping2Price;
 
-    public Burger(String name, String meat, double price, String bread){
+    public Burger(String name, Meat meat, double price, Bread bread){
         this.name = name;
         this.meat = meat;
         this.price = price;
