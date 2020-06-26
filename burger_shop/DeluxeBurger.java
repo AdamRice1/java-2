@@ -23,30 +23,60 @@ public class DeluxeBurger extends Burger {
         super("Deluxe", meat ,20.00, bread);
     }
     public void addBurgerTopping1(String name, double price){
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
             this.burgerTopping1 = name;
             this.burgerTopping1Price = price;
+        }
 
     }
     public void addBurgerTopping2(String name, double price){
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
             this.burgerTopping2 = name;
             this.burgerTopping2Price = price;
+        }
 
     }
     public void addBurgerTopping3(String name, double price){
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
             this.burgerTopping3 = name;
             this.burgerTopping3Price = price;
+        }
     }
     public void addBurgerTopping4(String name, double price){
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
             this.burgerTopping4 = name;
             this.burgerTopping4Price = price;
+        }
     }
     public void addBurgerTopping5(String name, double price){
-        this.burgerTopping5 = name;
-        this.burgerTopping5Price = price;
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
+            this.burgerTopping5 = name;
+            this.burgerTopping5Price = price;
+        }
     }
     public void addBurgerTopping6(String name, double price){
-        this.burgerTopping6 = name;
-        this.burgerTopping6Price = price;
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
+            this.burgerTopping6 = name;
+            this.burgerTopping6Price = price;
+        }
     }
     public double priceOfTheDeluxeBurger() {
         double burgerPrice = this.price;

@@ -1,20 +1,20 @@
 package burger_shop;
 
 public class HealthBurger extends Burger {
-    public String healthyBurgerTopping1;
-    public double healthyBurgerTopping1Price;
+    private String healthyBurgerTopping1;
+    private double healthyBurgerTopping1Price;
 
-    public String healthyBurgerTopping2;
-    public double healthyBurgerTopping2Price;
+    private String healthyBurgerTopping2;
+    private double healthyBurgerTopping2Price;
 
-    public String healthyBurgerTopping3;
-    public double healthyBurgerTopping3Price;
+    private String healthyBurgerTopping3;
+    private double healthyBurgerTopping3Price;
 
-    public String healthyBurgerTopping4;
-    public double healthyBurgerTopping4Price;
+    private String healthyBurgerTopping4;
+    private double healthyBurgerTopping4Price;
 
 
-   public HealthBurger(Meat meat, double price, Bread bread){
+   private HealthBurger(Meat meat, double price, Bread bread){
        super("Health", meat , price, bread);
    }
    public void addHealthTopping1(String name, double price){

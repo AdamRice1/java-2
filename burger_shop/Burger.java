@@ -1,10 +1,10 @@
 package burger_shop;
 
 public class Burger {
-    public String name;
-    public Meat meat;
-    public double price;
-    public Bread bread;
+    private final String name;
+    private final Meat meat;
+    public final double price;
+    private final Bread bread;
     public String topping1;
     public double topping1Price;
     public String topping2;
@@ -17,12 +17,22 @@ public class Burger {
         this.bread = bread;
     }
     public void addTopping1(String name, double price){
-        this.topping1 = name;
-        this.topping1Price = price;
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
+            this.topping1 = name;
+            this.topping1Price = price;
+        }
     }
     public void addTopping2(String name, double price){
-        this.topping2 = name;
-        this.topping2Price = price;
+        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+            throw new IllegalArgumentException("That is not a topping option!");
+        }
+        else {
+            this.topping2 = name;
+            this.topping2Price = price;
+        }
     }
     public double priceOfTheBurger() {
         double burgerPrice = this.price;

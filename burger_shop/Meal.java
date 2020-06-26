@@ -2,8 +2,8 @@ package burger_shop;
 
 public class Meal {
     private Drink drink;
-    private Side side;
-    private Burger burger;
+    private  Side side;
+    private  Burger burger;
 
     public Meal(Drink drink, Side side, Burger burger) {
         this.drink = drink;
@@ -23,15 +23,15 @@ public class Meal {
         return burger;
     }
 
-    public void setDrink(Drink drink) {
+    public final void setDrink(Drink drink) {
         this.drink = drink;
     }
 
-    public void setSide(Side side) {
+    public final void setSide(Side side) {
         this.side = side;
     }
 
-    public void setBurger(Burger burger) {
+    public final void setBurger(Burger burger) {
         this.burger = burger;
     }
 

@@ -37,5 +37,7 @@ public class Main {
         order1.addToppings(tops);
         order1.purchase();
         // End of Ex. 2
+        // Beginning of Ex. 3
+        // All exercise 3 functionality added or already included.
     }
 }
