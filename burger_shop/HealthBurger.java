@@ -14,7 +14,7 @@ public class HealthBurger extends Burger {
     private double healthyBurgerTopping4Price;
 
 
-   private HealthBurger(Meat meat, double price, Bread bread){
+   public HealthBurger(Meat meat, double price, Bread bread){
        super("Health", meat , price, bread);
    }
    public void addHealthTopping1(String name, double price){

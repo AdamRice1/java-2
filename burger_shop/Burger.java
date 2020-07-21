@@ -17,7 +17,7 @@ public class Burger {
         this.bread = bread;
     }
     public void addTopping1(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name !="pickles") {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
@@ -26,7 +26,7 @@ public class Burger {
         }
     }
     public void addTopping2(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name != "lettuce") {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {

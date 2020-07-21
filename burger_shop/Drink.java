@@ -5,7 +5,7 @@ public class Drink {
     private final double price;
 
     public Drink(String drink, double price) {
-       if(drink != "soda" || drink != "water" || drink != "milk" || drink != "tea"){
+       if(drink != "soda") {
            throw new IllegalArgumentException("That is not a drink option!");
        }
        else {

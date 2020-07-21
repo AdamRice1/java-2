@@ -23,7 +23,7 @@ public class DeluxeBurger extends Burger {
         super("Deluxe", meat ,20.00, bread);
     }
     public void addBurgerTopping1(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name !="pickles") {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
@@ -33,7 +33,7 @@ public class DeluxeBurger extends Burger {
 
     }
     public void addBurgerTopping2(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name != "onions" ) {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
@@ -43,7 +43,7 @@ public class DeluxeBurger extends Burger {
 
     }
     public void addBurgerTopping3(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name != "tomato" ) {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
@@ -52,7 +52,7 @@ public class DeluxeBurger extends Burger {
         }
     }
     public void addBurgerTopping4(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name != "lettuce" ) {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
@@ -61,7 +61,7 @@ public class DeluxeBurger extends Burger {
         }
     }
     public void addBurgerTopping5(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name != "cheese" ) {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
@@ -70,7 +70,7 @@ public class DeluxeBurger extends Burger {
         }
     }
     public void addBurgerTopping6(String name, double price){
-        if(name != "pickles" || name != "onions" || name != "lettuce" || name != "tomato" || name != "bacon" || name != "cheese") {
+        if(name != "pickles") {
             throw new IllegalArgumentException("That is not a topping option!");
         }
         else {
